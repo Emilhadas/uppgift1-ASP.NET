@@ -26,6 +26,7 @@ namespace uppgift1_test.Models.ViewModels
 
         [Display(Name = "Bekräfta Lösenord")]
         [Required(ErrorMessage = "Du måste ange ett Lösenord")]
+        [DataType(DataType.Password)]
         [Compare(nameof(Password), ErrorMessage = "Lösenordet stämmer inte överens")]
         public string ConfPassword { get; set; }
 

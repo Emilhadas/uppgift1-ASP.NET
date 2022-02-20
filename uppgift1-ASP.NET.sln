@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssignmentWebApp", "uppgift1_test\AssignmentWebApp.csproj", "{2949B51E-21C2-4309-9CB1-13B080F69A63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentWebApi", "AssignmentWebApi\AssignmentWebApi.csproj", "{9617CC3B-ACE9-4C17-A1A3-977739803402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssignmentWebApi", "AssignmentWebApi\AssignmentWebApi.csproj", "{9617CC3B-ACE9-4C17-A1A3-977739803402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

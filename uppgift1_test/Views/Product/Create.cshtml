@@ -1,0 +1,21 @@
+﻿@model HomeIndexViewModel
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <input asp-for="ProductForm.Name" placeholder="Product Name" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <input asp-for="ProductForm.Description" placeholder="Product Description" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <input asp-for="ProductForm.Price" placeholder="Product Price" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>

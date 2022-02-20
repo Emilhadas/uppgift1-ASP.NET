@@ -1,0 +1,31 @@
+﻿
+@using AssignmentWebApp.Models.ViewModels
+@model ProductViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div><strong>Sort by category</strong></div>
+@foreach (var i in Model.Product)
+{
+    <ul><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-input="@i.CategoryName">@i.CategoryName</a></ul>
+
+}
+
+<div class="row justify-content-center align-items-center">
+@foreach (var item in Model.Product)
+{
+    <input hidden value="@item.Id"/>
+    <div class="card w-75 mt-3">
+        <div class="card-body">
+            <h5 class="card-title">@item.Name</h5>
+            <p class="card-text">@item.Price kr</p>
+            <a asp-controller="Product" asp-action="Details" asp-route-productId="@item.Id" class="btn btn-info">Mer info</a>
+        </div>
+    </div>
+}
+</div>
+
+
+
+
+

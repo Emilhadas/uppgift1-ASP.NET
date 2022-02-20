@@ -1,0 +1,14 @@
+﻿@using AssignmentWebApp.Controllers
+@model ProductDetailsModel
+
+<form method="post">
+    <div class="align-items-center">
+        <div class="card w-75 mt-3">
+            <div class="card-body">
+                <h2 class="card-title">@Model.Product.Name</h2>
+                <p class="card-text">@Model.Product.Description</p>
+                <p class="card-text">@Model.Product.Price kr</p>
+            </div>
+        </div>
+    </div>
+</form>
